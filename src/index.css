@@ -1,13 +1,119 @@
+:root {
+    --primary-color: #5a7fce;
+    --secondary-color: #a09b9b;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+h1 {
+    color: #535151d8;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-note {
+    width: 470px;
+    font-size: 1.3rem;
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin: 8px 0;
+    border: 1px solid var(--secondary-color);
+}
+
+.input-note:focus,
+textarea:focus {
+    outline: 2px solid var(--primary-color);
+}
+
+.card {
+    width: 500px;
+    padding: 18px;
+    border-radius: 6px;
+    margin: 8px 0;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.4);
+}
+
+.button-tambah {
+    display: block;
+    width: 100px;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.button-tambah:focus {
+    outline: 3px solid #2c63da;
+}
+
+.flex {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.note-item {
+    width: 300px;
+    min-height: 300px;
+    background-color: var(--primary-color);
+    color: white;
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.note-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn {
+    width: 100px;
+    height: 50px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    outline: none;
+    transition: 300ms;
+}
+.btn:active {
+    transform: scale(0.9, 0.9);
+}
+.btn-delete {
+    background-color: #f44336;
+}
+.btn-archive {
+    background-color: #d8e250;
 }
